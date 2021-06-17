@@ -4,6 +4,9 @@ sudo apt-get install --assume-yes gnupg apt-utils gnupg2 curl gcc
 
 sudo apt-get update
 
+rvm install ruby-2.4.10
+rvm use ruby-2.4.10 --default
+
 sudo apt-get install --assume-yes mysql-server-8.0
 
 sudo usermod -d /var/lib/mysql mysql
