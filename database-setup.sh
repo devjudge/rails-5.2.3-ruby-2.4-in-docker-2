@@ -46,3 +46,8 @@ ps aux | grep mongo
 sleep 5
 wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/backend-project/database/mongo-database.js
 mongo < mongo-database.js
+
+. "$HOME/.rvm/scripts/rvm"
+rvm install ruby-2.4.10
+echo 'export PATH=$PATH:$HOME/.rvm/rubies/ruby-2.4.10/bin/' >> $HOME/.bashrc
+exec bash
